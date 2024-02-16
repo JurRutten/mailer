@@ -257,7 +257,7 @@ class SmtpTransport extends AbstractTransport
         $this->getLogger()->debug(sprintf('Email transport "%s" started', __CLASS__));
     }
 
-    private function stop(): void
+    public function stop(): void
     {
         if (!$this->started) {
             return;
